@@ -220,7 +220,7 @@ th {
   .contacts {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(-45deg, #2add92, #493cf7, #e60adb, #ffdde1);
+    background: linear-gradient(-45deg, #2add92, #dbd8081f, #eecb2d, #16079e59, #07c236);
     background-size: 400% 400%;
     animation: gradientBG 10s ease infinite;
 }
