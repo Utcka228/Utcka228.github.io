@@ -4,87 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Наши достижения</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; text-align: center;">
+
+    <!-- Навигация -->
+    <div style="background: blue; padding: 10px;">
+        <a href="index.html" style="color: white; text-decoration: none; font-size: 18px; margin-right: 20px;">Главная</a>
+        <a href="achievements.html" style="color: white; text-decoration: none; font-size: 18px;">Наши достижения</a>
+    </div>
+
+    <!-- Контейнер с анимацией -->
+    <div style="max-width: 800px; margin: 20px auto; padding: 20px; border-radius: 15px; 
+                animation: colorChange 5s infinite alternate;">
+
+        <h2 style="font-size: 24px; font-weight: bold;">Наши достижения</h2>
+
+        <img src="your-image.jpg" alt="Победители" style="width: 100%; border-radius: 10px;">
+
+        <div style="background: rgba(255, 255, 255, 0.9); padding: 10px; border-radius: 10px; margin-top: 10px;">
+            <p style="font-size: 18px; font-weight: bold;">Победители национальных соревнований</p>
+            <p>Наши студенты стали победителями в ряде крупных турниров по робототехнике.</p>
+        </div>
+    </div>
+
+    <!-- Анимация цвета -->
     <style>
-        /* Общие стили */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Навигация */
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            background: blue;
-            justify-content: center;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin: 10px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Стили блока достижений */
-        .achievement-block {
-            background: #f8f8f8;
-            color: black;
-            text-align: center;
-            padding: 20px;
-            width: 90%;
-            max-width: 600px;
-            border-radius: 10px;
-            margin: 20px auto;
-        }
-
-        .image-block {
-            margin-bottom: 15px;
-        }
-
-        .image-block img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .achievement-text {
-            padding: 15px;
-            font-size: 16px;
-            line-height: 1.5;
+        @keyframes colorChange {
+            0% { background: #ff66b2; }
+            50% { background: #9933ff; }
+            100% { background: #ff66b2; }
         }
     </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Наши достижения</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <div class="achievement-block">
-                <h2>Наши достижения</h2>
-                <div class="image-block">
-                    <img src="2.jpg" alt="Победители соревнований">
-                </div>
-                <div class="achievement-text">
-                    <p><strong>Победители национальных соревнований</strong></p>
-                    <p>Наши студенты стали победителями в ряде крупных турниров по робототехнике.</p>
-                </div>
-            </div>
-        </section>
-    </main>
 </body>
 </html>
