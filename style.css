@@ -250,3 +250,10 @@ th {
   height: auto; /* Сохранение пропорций */
   border-radius: 10px; /* Скругление углов, если нужно */
 }
+
+@media (max-width: 768px) {
+  .contact-photo {
+    width: 80%; /* Уменьшение фото на мобильных */
+    max-width: 200px;
+  }
+}
