@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Kids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="lo.jpg">
+    
+</head>
+<body class="rt">
+    <header >
+        <nav>
+            <ul >
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="courses.html">Курсы</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="https://wa.me/79206852628" target="_blank">Написать в WhatsApp</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>О нашей школе</h2>
+        <p>Мы обучаем детей робототехнике и программированию. Наши преподаватели — опытные инженеры и педагоги.</p>
+        
+    </section>
+
+    <section>
+        <h2>Записаться на пробное БЕСПЛАТНОЕ занятие</h2>
+        <form id="whatsappForm" action="send-form.php" method="post">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <input type="text" id="phone" placeholder="Ваш телефон" required>
+            <input type="number" id="age" placeholder="Возраст ребёнка" required>
+            <button type="submit">Отправить в WhatsApp</button>
+        </form>
+    </section>
+    <section class="features">
+        <h2 class="her">Почему нужно учиться в Cyber Kids?</h2>
+        <p class="her">Наша программа предполагает живое обучение, полностью исключающее рутинное ведение конспектов и скучных записей в тетрадях. Во время занятий дети не сидят за партами в полном молчании, а активно общаются между собой и с педагогом, свободно высказывают свои мысли и делятся творческими задумками.</p>
+    
+        <div class="features-container" >
+            <div class="feature">
+                <img src="pr1.png" alt="Учебная программа">
+                <h3>ЛУЧШАЯ УЧЕБНАЯ ПРОГРАММА</h3>
+                <p>Разработанная нашими специалистами программа позволит вашему ребёнку с интересом изучать новое.</p>
+            </div>
+    
+            <div class="feature">
+                <img src="pr2.png" alt="Преподаватели">
+                <h3>ДИПЛОМИРОВАННЫЕ ПЕДАГОГИ</h3>
+                <p>Каждый наш педагог прошел обучение и переквалификацию в нашей компании.</p>
+            </div>
+    
+            <div class="feature">
+                <img src="pr4.png" alt="Техника LEGO">
+                <h3>РАЗВИТИЕ НАВЫКОВ ПРОГРАММИРОВАНИЯ</h3>
+                <p>Предоставляемая нами учебная техника показала себя как наиболее эффективное и надежное решение.</p>
+            </div>
+        </div>
+    </section>
+    <div class="sections">
+        <div class="container reverse">
+            <div class="text">
+                <h2>Робототехника для детей</h2>
+                <p>Робототехника - идеальное занятие для любознательных и творческих ребят. Обучение в школе робототехники - это уникальный шанс реализовать свои конструкторские и изобретательские наклонности.</p>
+            </div>
+            <img src="5.jpg" alt="Робот" class="image">
+        </div>
+    
+        <div class="container">
+            <img src="321.jpg" alt="Робот" class="image">
+            <div class="text">
+                <h2>Программирование</h2>
+                <p>Программирование – один из ключевых и актуальных на сегодня навыков, которому нужно обучать ребенка уже с младших классов. Scratch, основы языка C++ позволят Вашему ребенку умело взаимодействовать с компьютером.</p>
+            </div>
+        </div>
+    
+        <div class="container reverse">
+            <div class="text">
+                <h2>Разработка видеоигра</h2>
+                <p>На курсе ребята осваивают теорию, основные принципы геймдизайна и учатся работать с популярными движками Unity и Unreal Engine 4. Узнают, как монетизировать игры и удерживать интерес игроков. Смогут начать карьеру в игровой индустрии и начать зарабатывать.</p>
+            </div>
+            <img src="u.jpg" alt="Робот" class="image">
+        </div>
+    
+        <div class="container">
+            <img src="3д.jpg" alt="Робот" class="image">
+            <div class="text">
+                <h2>3-D моделирование</h2>
+                <p>Мы обучаем детей создавать пространственные объекты с помощью специализированных CAD программ. Так же мы учим детей настраивать и работать с 3D принтером, чтобы печатать наши созданные пространственные объекты.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="heder">
+        <p>© 2025 Школа робототехники. Все права защищены.</p>
+    </footer>
+  
+
+    <script>
+        document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Остановить стандартную отправку формы
+        
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var age = document.getElementById("age").value;
+        
+            var message = "Здравствуйте! Меня зовут " + encodeURIComponent(name) + 
+                          ". Мой телефон: " + encodeURIComponent(phone) + 
+                          ". Возраст ребёнка: " + encodeURIComponent(age) + " лет.";
+        
+            var whatsappLink = "https://wa.me/79001196020?text=" + message;
+            
+            window.open(whatsappLink, "_blank");
+        });
+        </script>
+       
+</body>
+</html>

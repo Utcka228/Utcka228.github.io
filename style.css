@@ -1,0 +1,217 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background: #f4f4f4;
+    color: #020801;
+}
+
+header {
+    background: #333ecf;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 50px;
+    background: #93d673;
+    color: rgb(19, 2, 2);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: white;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 20px;
+    background: #333ecf;
+    color: white;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5ed16d;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #086105;
+    color: white;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Отступ между блоками */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Размещает текст и картинку равномерно */
+    gap: 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse; /* Меняет порядок (картинка справа) */
+}
+
+.image {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Тень для красоты */
+}
+
+.text {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Адаптивность: для мобильных устройств делаем блоки вертикальными */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 250%; /* Делаем изображение адаптивным */
+        max-width: 500px;
+    }
+}
+
+.rt{
+    color: #086105;
+}
+
+.heder{
+    color: #9cecad;
+}
+
+.features {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.features-container {
+    color: #2ba8f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    width: 300px;
+    padding: 20px;
+    background: rgb(245, 248, 244);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.her{
+    color: #0951d8;
+}
