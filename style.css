@@ -238,13 +238,13 @@ th {
     }
 }
 
-.contact-container {
+.contacts-container {
   display: flex;
   flex-direction: column;
   align-items: center; /* Выравнивание по центру */
 }
 
-.contact-photo {
+.contacts-photo {
   width: 100%; /* Фото растягивается на всю ширину */
   max-width: 300px; /* Максимальный размер фото */
   height: auto; /* Сохранение пропорций */
@@ -252,18 +252,18 @@ th {
 }
 
 @media (max-width: 768px) {
-  .contact-photo {
+  .contacts-photo {
     width: 80%; /* Уменьшение фото на мобильных */
     max-width: 200px;
   }
 }
-.contact-gallery {
+.contacts-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
 }
 
-.contact-photo {
+.contacts-photo {
   width: 100%;
   height: auto;
 }
