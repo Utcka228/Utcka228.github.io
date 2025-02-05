@@ -217,53 +217,67 @@ th {
 }
 
 
-  .contacts {
+  
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Навигация */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background: blue;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Основной контейнер достижений */
+.achievements {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Блок с достижениями */
+.achievement-block {
+    background: linear-gradient(45deg, purple, violet);
+    color: black;
     text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(-45deg, #2add92, #dbd8081f, #eecb2d, #16079e59, #07c236);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
 }
 
-/* Анимация градиента */
-@keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+/* Фото и текст */
+.image-block {
+    width: 100%;
+    text-align: center;
 }
 
-.contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Выравнивание по центру */
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.contacts {
-  width: 100%; /* Фото растягивается на всю ширину */
-  max-width: 300px; /* Максимальный размер фото */
-  height: auto; /* Сохранение пропорций */
-  border-radius: 10px; /* Скругление углов, если нужно */
-}
-
+/* Медиа-запрос для мобильных */
 @media (max-width: 768px) {
-  .contacts {
-    width: 80%; /* Уменьшение фото на мобильных */
-    max-width: 200px;
-  }
-}
-.contacts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
-}
-
-.contacts {
-  width: 100%;
-  height: auto;
+    .achievement-block {
+        width: 100%;
+        padding: 15px;
+    }
 }
