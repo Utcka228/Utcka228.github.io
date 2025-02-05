@@ -257,3 +257,13 @@ th {
     max-width: 200px;
   }
 }
+.contact-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.contact-photo {
+  width: 100%;
+  height: auto;
+}
