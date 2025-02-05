@@ -1,12 +1,56 @@
-<form action="send.php" method="post">
-    <label for="name">Имя:</label>
-    <input type="text" id="name" name="name" required>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наши достижения</title>
+  <link rel="stylesheet" href="style.css"> <!-- Подключаем стили -->
+</head>
+<body>
 
-    <label for="phone">Телефон:</label>
-    <input type="tel" id="phone" name="phone" required>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="contacts.html">Наши достижения</a></li>
+        <!-- Другие ссылки, если нужно -->
+      </ul>
+    </nav>
+  </header>
 
-    <label for="message">Сообщение:</label>
-    <textarea id="message" name="message"></textarea>
+  <section class="contacts">
+    <h2>Наши достижения</h2>
+    <div class="contacts">
+      <img src="path/to/image1.jpg" alt="Достижение 1">
+      <div class="achievement-text">
+        <h3>Победители национальных соревнований</h3>
+        <p>Наши студенты стали победителями в ряде крупных турниров по робототехнике.</p>
+      </div>
+    </div>
+    <div class="contacts">
+      <img src="path/to/image2.jpg" alt="Достижение 2">
+      <div class="contacts">
+        <h3>Участие в международных выставках</h3>
+        <p>Мы представили свои разработки на международных выставках и форумах.</p>
+      </div>
+    </div>
+    <!-- Добавь столько карточек достижений, сколько нужно -->
+  </section>
 
-    <button type="submit">Отправить</button>
-</form>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".contacts-item");
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.2 });
+  
+    elements.forEach(el => observer.observe(el));
+  });
+  </script> <!-- Подключаем JavaScript -->
+</body>
+</html>
