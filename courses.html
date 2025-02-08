@@ -37,9 +37,20 @@
             border-left: 4px solid #0057b8;
             background-color: #f0f8ff;
             border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .direction img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
         }
         ul {
             padding-left: 20px;
+            text-align: left;
         }
         .btn {
             display: block;
@@ -68,8 +79,8 @@
             .container {
                 width: 95%;
                 padding: 15px;
-                box-shadow: none; /* Убираем тень для упрощения на мобильных */
-                border-radius: 0;  /* Убираем скругление углов */
+                box-shadow: none;
+                border-radius: 0;
             }
             h1 {
                 font-size: 22px;
@@ -77,6 +88,7 @@
             }
             h3 {
                 font-size: 18px;
+                text-align: center;
             }
             ul {
                 padding-left: 15px;
@@ -92,6 +104,10 @@
             .btn:hover {
                 background-color: #005bb5;
             }
+            .direction img {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -102,6 +118,7 @@
         <p>В нашей школе робототехники каждый ребенок может раскрыть свой потенциал, создавая роботов, изучая программирование и участвуя в увлекательных инженерных проектах.</p>
 
         <div class="direction">
+            <img src="lego-robotics.jpg" alt="Робототехника с LEGO Mindstorms EV3">
             <h3>🤖 Робототехника с LEGO Mindstorms EV3</h3>
             <p><strong>Возраст:</strong> 6–14 лет</p>
             <ul>
@@ -112,6 +129,7 @@
         </div>
 
         <div class="direction">
+            <img src="programming.jpg" alt="Основы программирования">
             <h3>💻 Основы программирования</h3>
             <p><strong>Возраст:</strong> от 8 лет</p>
             <ul>
@@ -122,6 +140,7 @@
         </div>
 
         <div class="direction">
+            <img src="engineering.jpg" alt="Инженерные технологии и электроника">
             <h3>🛠️ Инженерные технологии и электроника</h3>
             <p><strong>Возраст:</strong> от 10 лет</p>
             <ul>
@@ -132,6 +151,7 @@
         </div>
 
         <div class="direction">
+            <img src="stem-projects.jpg" alt="STEM-проекты и образовательные квесты">
             <h3>🌍 STEM-проекты и образовательные квесты</h3>
             <p><strong>Возраст:</strong> от 7 лет</p>
             <ul>
