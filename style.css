@@ -197,35 +197,15 @@ th {
         text-align: center;
     }
 
+    .reverse {
+        flex-direction: column;
+    }
 
     .image {
         width: 250%; /* Делаем изображение адаптивным */
         max-width: 500px;
     }
-
-    .revers {
-        flex-direction: column-reverse;
-    }
-
-    .reverse {
-        flex-direction: column;
-    }
-
-
-
-    .container {
-        align-items: normal;
-        justify-content: normal;
-    }
-
-    .containe {
-        align-items: normal;
-        justify-content: normal;
-        display: flex;
-        flex-direction: column-reverse;
-    }
 }
-
 
 .rt{
     color: #086105;
@@ -268,6 +248,28 @@ th {
     color: #0951d8;
 }
 
+@media (max-width: 768px) {
+    .revers {
+        flex-direction: column-reverse;
+    }
 
+    .reverse {
+        flex-direction: column;
+    }
+
+
+
+    .container {
+        align-items: normal;
+        justify-content: normal;
+    }
+
+    .containe {
+        align-items: normal;
+        justify-content: normal;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
 
 
