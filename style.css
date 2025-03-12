@@ -192,19 +192,7 @@ th {
 
 /* Адаптивность: для мобильных устройств делаем блоки вертикальными */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .reverse {
-        flex-direction: column;
-    }
-
-    .image {
-        width: 250%; /* Делаем изображение адаптивным */
-        max-width: 500px;
-    }
+    
 }
 
 .rt{
@@ -247,8 +235,6 @@ th {
 .her{
     color: #0951d8;
 }
-
-@media (max-width: 768px) {
     .revers {
         flex-direction: column-reverse;
     }
@@ -262,6 +248,8 @@ th {
     .container {
         align-items: normal;
         justify-content: normal;
+        flex-direction: column;
+        text-align: center;
     }
 
     .containe {
@@ -270,6 +258,12 @@ th {
         display: flex;
         flex-direction: column-reverse;
     }
-}
+
+    .image {
+        width: 250%; /* Делаем изображение адаптивным */
+        max-width: 500px;
+    }
+
+
 
 
