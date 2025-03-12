@@ -197,17 +197,10 @@ th {
         text-align: center;
     }
 
-    .reverse {
-        flex-direction: column;
-    }
 
     .image {
         width: 250%; /* Делаем изображение адаптивным */
         max-width: 500px;
-    }
-
-    .containe {
-       flex-direction: column-reverse;
     }
 
     .revers {
