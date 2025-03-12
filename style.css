@@ -209,7 +209,30 @@ th {
     .containe {
        flex-direction: column-reverse;
     }
+
+    .revers {
+        flex-direction: column-reverse;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+
+
+    .container {
+        align-items: normal;
+        justify-content: normal;
+    }
+
+    .containe {
+        align-items: normal;
+        justify-content: normal;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
+
 
 .rt{
     color: #086105;
