@@ -248,28 +248,6 @@ th {
     color: #0951d8;
 }
 
-@media (max-width: 1800px) {
-    .revers {
-        flex-direction: column-reverse;
-    }
 
-    .reverse {
-        flex-direction: column;
-    }
-
-
-
-    .container {
-        align-items: normal;
-        justify-content: normal;
-    }
-
-    .containe {
-        align-items: normal;
-        justify-content: normal;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-}
 
 
