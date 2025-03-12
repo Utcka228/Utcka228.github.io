@@ -142,8 +142,40 @@ th {
     gap: 20px;
 }
 
+.containe {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between; /* Размещает текст и картинку равномерно */
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Размещает текст и картинку равномерно */
+    gap: 20px;
+}
+
+.containe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Размещает текст и картинку равномерно */
+    gap: 20px;
+}
+
 .reverse {
     flex-direction: row-reverse; /* Меняет порядок (картинка справа) */
+}
+
+.revers {
+    flex-direction: row-reverse; /* Меняет порядок (картинка справа) */
+}
+
+.niz {
+    height: 1080px;
+    width: 1903px;
+    background-color: #ffffff;
 }
 
 .image {
@@ -214,6 +246,30 @@ th {
 
 .her{
     color: #0951d8;
+}
+
+@media (max-width: 1800px) {
+    .revers {
+        flex-direction: column-reverse;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+
+
+    .container {
+        align-items: normal;
+        justify-content: normal;
+    }
+
+    .containe {
+        align-items: normal;
+        justify-content: normal;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 
