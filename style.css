@@ -190,6 +190,32 @@ th {
     text-align: left;
 }
 
+.imaj {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+
+}
+
+.feature {
+    width: 300px;
+    padding: 20px;
+    background: rgb(245, 248, 244);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.features-container {
+    color: #2ba8f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /* Адаптивность: для мобильных устройств делаем блоки вертикальными */
 @media (max-width: 768px) {
     
