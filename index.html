@@ -111,6 +111,55 @@
             window.open(whatsappLink, "_blank");
         });
         </script>
-       
+       <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const snowContainer = document.createElement('div');
+    snowContainer.style.position = 'fixed';
+    snowContainer.style.top = '0';
+    snowContainer.style.left = '0';
+    snowContainer.style.width = '100%';
+    snowContainer.style.height = '100%';
+    snowContainer.style.pointerEvents = 'none';
+    snowContainer.style.overflow = 'hidden';
+    snowContainer.style.zIndex = '9999';
+    document.body.appendChild(snowContainer);
+
+    const numFlakes = 60; // количество снежинок
+
+    for (let i = 0; i < numFlakes; i++) {
+        const flake = document.createElement('div');
+        flake.innerHTML = '❄';
+        flake.style.position = 'absolute';
+        flake.style.color = 'white';
+        flake.style.fontSize = (Math.random() * 15 + 10) + 'px';
+        flake.style.opacity = Math.random();
+        flake.style.left = Math.random() * window.innerWidth + 'px';
+        flake.style.top = Math.random() * -50 + 'px';
+        snowContainer.appendChild(flake);
+
+        const speed = Math.random() * 3 + 2; // скорость падения
+        const drift = Math.random() * 1 - 0.5; // горизонтальное смещение
+
+        function fall() {
+            let top = parseFloat(flake.style.top);
+            let left = parseFloat(flake.style.left);
+            top += speed;
+            left += drift;
+
+            if (top > window.innerHeight) {
+                top = -10;
+                left = Math.random() * window.innerWidth;
+            }
+
+            flake.style.top = top + 'px';
+            flake.style.left = left + 'px';
+            requestAnimationFrame(fall);
+        }
+
+        fall();
+    }
+});
+</script>
 </body>
 </html>
+
