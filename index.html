@@ -9,9 +9,22 @@
     
 </head>
 <body class="rt">
-     <audio autoplay loop hidden>
-        <source src="jb.mp3" type="audio/mpeg">
-    </audio>
+ <audio id="bg-music" src="jb.mp3" autoplay loop hidden muted></audio>
+
+<script>
+  window.addEventListener('load', () => {
+    const audio = document.getElementById('bg-music');
+
+    // Попытка включить звук после старта (некоторые браузеры разрешают)
+    setTimeout(() => {
+      audio.muted = false;
+      audio.volume = 1.0;
+      audio.play().catch(err => {
+        console.warn('Автозапуск со звуком заблокирован:', err);
+      });
+    }, 1000);
+  });
+</script>
     <header >
         <nav>
             <ul>
@@ -216,6 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
    
 </body>
 </html>
+
 
 
 
