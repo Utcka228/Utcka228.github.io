@@ -9,22 +9,7 @@
     
 </head>
 <body class="rt">
- <audio id="bg-music" src="jb.mp3" autoplay loop hidden muted></audio>
 
-<script>
-  window.addEventListener('load', () => {
-    const audio = document.getElementById('bg-music');
-
-    // Попытка включить звук после старта (некоторые браузеры разрешают)
-    setTimeout(() => {
-      audio.muted = false;
-      audio.volume = 1.0;
-      audio.play().catch(err => {
-        console.warn('Автозапуск со звуком заблокирован:', err);
-      });
-    }, 1000);
-  });
-</script>
     <header >
         <nav>
             <ul>
@@ -36,12 +21,23 @@
             </ul>
         </nav>
     </header>
-
+<div class="wrapper">
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
     <section class="her">
         
     </section>
-
-    <section>
+        <section class="lok">
         <h2>Записаться на пробное занятие</h2>
         <form id="whatsappForm" action="send-form.php" method="post">
             <input type="text" id="name" placeholder="Ваше имя" required>
@@ -49,7 +45,9 @@
             <input type="number" id="age" placeholder="Возраст ребёнка" required>
             <button type="submit"><strong>Отправить в WhatsApp</strong></button>
         </form>
-    </section>  
+    </section> 
+
+     
     <div class="sections">
         <div class="container reverse">
             <div class="text">
@@ -105,9 +103,12 @@
             </div>
         </div>
     </section>
+
+  
     <footer class="heder">
         <p>© 2025 Школа робототехники. Все права защищены.</p>
     </footer>
+</div> 
   
 
     <script>
@@ -140,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
     snowContainer.style.zIndex = '9999';
     document.body.appendChild(snowContainer);
 
-    const numFlakes = 65; // количество снежинок
+    const numFlakes = 5; // количество снежинок
 
     for (let i = 0; i < numFlakes; i++) {
         const flake = document.createElement('div');
@@ -153,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
         flake.style.top = Math.random() * -50 + 'px';
         snowContainer.appendChild(flake);
 
-        const speed = Math.random() * 4 + 2; // скорость падения
+        const speed = Math.random() * 3 + 2; // скорость падения
         const drift = Math.random() * 1 - 0.5; // горизонтальное смещение
 
         function fall() {
@@ -176,8 +177,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-     <script>
-document.addEventListener('DOMContentLoaded', function() {
+     <script >
+document.addEventListener('DOMContentLoaded', function()  {
     const snowContainer = document.createElement('div');
     snowContainer.style.position = 'fixed';
     snowContainer.style.top = '0';
@@ -189,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
     snowContainer.style.zIndex = '9999';
     document.body.appendChild(snowContainer);
 
-    const numFlakes = 65; // количество снежинок
+    const numFlakes = 5; // количество снежинок
 
     for (let i = 0; i < numFlakes; i++) {
         const flake = document.createElement('div');
@@ -226,17 +227,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
+<script>
+    $("#login-button").click(function(event){
+     event.preventDefault();
    
+   $('form').fadeOut(500);
+   $('.wrapper').addClass('form-success');
+});
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
 
 
 
