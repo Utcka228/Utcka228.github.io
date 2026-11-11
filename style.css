@@ -309,6 +309,7 @@ section {
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
+    text-align: center;
 }
 
 /* ================= ADVANTAGES ================= */
@@ -906,6 +907,10 @@ footer {
 .modal-content .modal-icon {
     font-size: 48px;
     margin-bottom: 15px;
+}
+
+.icon {
+    font-size: 130px;
 }
 
 .modal-content h3 {
