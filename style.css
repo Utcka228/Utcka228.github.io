@@ -1038,3 +1038,9 @@ footer {
     .robot-assistant { width: 150px; }
     .robot-message { width: 220px; font-size: 14px; bottom: 150px; }
 }
+
+@media(max-width: 1840px) {
+    .robot-assistant {
+        display: none;
+    }
+}
